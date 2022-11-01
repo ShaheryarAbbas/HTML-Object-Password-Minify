@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hide Password</title>
+</head>
+<body>
+    <label>Password</label>
+    <input type="password" id="txt">
+    <img src="eyeclose.jpg" id="eye" height="30" width="50" onclick="fun()">
+</body>
+</html>
+<script>
+//    function fun(){var e=document.querySelector("#txt");"password"==e.type?(e.type="text",document.querySelector("#eye").src="eyeopen.jpg"):(e.type="password",document.querySelector("#eye").src="eyeclose.jpg")}
+function fun() {
+    var e = document.querySelector("#txt");
+    "password" == e.type ? ((e.type = "text"), (document.querySelector("#eye").src = "eyeopen.jpg")) : ((e.type = "password"), (document.querySelector("#eye").src = "eyeclose.jpg"));
+}
+
+</script>
