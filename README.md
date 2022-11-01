@@ -1,0 +1,1 @@
+# HTML-Object-Password-Minify
